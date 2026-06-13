@@ -18,6 +18,7 @@ function Api() {
   }
   return (
     <div>
+      <h1>my first API call</h1>
       <h1>API</h1>
       <p>This is the API page.</p>
       {data.map((item:any) => (
