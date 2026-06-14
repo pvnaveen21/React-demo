@@ -9,12 +9,12 @@ function Api() {
     }, [])  
 
   const myFirstAPI = () => {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    //   .then(response => response.json())
-    //   .then(json => setData(json))
-    axios.get('https://jsonplaceholder.typicode.com/posts')
-    .then(response => setData(response.data))
-    .catch(error => console.error('Error fetching data:', error));
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((response:any) => response.json())
+      .then((json:any) => setData(json))
+    // axios.get('https://jsonplaceholder.typicode.com/posts')
+    // .then((response:any) => setData(response.data))
+    // .catch((error:any) => console.error('Error fetching data:', error));
   }
   return (
     <div>
